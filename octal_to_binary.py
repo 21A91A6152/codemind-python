@@ -1,0 +1,9 @@
+o=int(input())
+dec=0
+j=0
+while(o>0):
+    i=o%10
+    o=o//10
+    dec=dec+i*pow(8,j)
+    j+=1
+print(bin(dec)[2:])
