@@ -10,6 +10,3 @@ for n in range(a,b+1):
     if prime(n)==1 and  n!=1:
         c+=1
 print(c)
-
-
-
