@@ -1,16 +1,15 @@
 def prime(a):
-    for j in range(2,int(a**0.5)+1):
-        if a%j==0:
-            return 0
-    return 1
-n=int(input())
-c=0
-for i in range(2,n+1):
-    if(n%i==0 and prime(i))==1:
-        c+=1
-d=0
-for i in range(1,n+1):
-    if(n%i==0):
-        d=d+1
-print(d-c)
-        
+    c=0
+    for i in range(1,a+1):
+        if a%i==0:
+            c+=1
+    if c==2:
+        return 1
+    else:
+        return 0
+a=int(input())
+su=0
+for i in range(1,a+1):
+    if prime(i)!=1 and a%i==0:
+        su+=1
+print(su)
