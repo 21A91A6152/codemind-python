@@ -2,8 +2,7 @@ a=int(input())
 b=int(input())
 for i in range(a,b+1):
     temp=i
-    c=0
-    d=0
+    c=d=0
     while(i>0):
         r=i%10
         i=i//10
@@ -13,5 +12,4 @@ for i in range(a,b+1):
                 d+=1
     if(c==d):
         print(temp,end=' ')
-        
-        
+ 
