@@ -7,4 +7,3 @@ for n in range(a, b+ 1):
                break
        else:
            print(n)
-           
