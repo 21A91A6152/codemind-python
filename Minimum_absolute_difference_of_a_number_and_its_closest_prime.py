@@ -23,5 +23,3 @@ if(c<=d):
     print(c)
 else:
     print(d)
-
-        
