@@ -1,17 +1,13 @@
-a,b=map(int,input().split())
-x=list(map(int,input().split()))
-y=list(map(int,input().split()))
-c=0
-b=[]
-d=[]
-for i in x:
-    if i in y:
-        b.append(i)
+m,n=map(int,input().split())
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+a=set(a)
+b=set(b)
+c=[]
+for i in a:
+    if i in b:
+        c.append(i)
 for j in b:
-    if j not in d:
-        d.append(j)
-        c+=1
-print(c)
-
-    
-    
+    if j in a:
+        c.append(j)
+print(len(c)//2)
