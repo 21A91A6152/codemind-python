@@ -1,26 +1,13 @@
-a,b=map(int,input().split())
-x=list(map(int,input().split()))
-y=list(map(int,input().split()))
-c=0
-b=[]
-d=[]
-e=[]
-for i in x:
+n,m=map(int,input().split())
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
+a=set(a)
+b=set(b)
+c=[]
+for i in a:
     if i not in b:
-        b.append(i)
-for k in y:
-    if k not in e:
-        e.append(k)
+        c.append(i)
 for j in b:
-    if j not in e:
-        d.append(j)
-        c+=1
-for j in e:
-    if j not in b:
-        d.append(j)
-        c+=1
-
-print(c)
-
-    
-    
+    if j not in a:
+        c.append(j)
+print(len(c))
