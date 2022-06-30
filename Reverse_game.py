@@ -1,9 +1,9 @@
 n=int(input())
 a=list(map(int,input().split()))
-for i in range(n):
+for i in a:
     sum=0
-    while(a[i]):
-        j=a[i]%10
-        sum=sum*10+j
-        a[i]=a[i]//10
+    while(i>0):
+        r=i%10
+        i=i//10
+        sum=sum*10+r
     print(sum,end=' ')
