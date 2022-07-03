@@ -1,7 +1,9 @@
 n=int(input())
-sum=0
 a=list(map(int,input().split()))
-a.reverse()
-for i in range(n):
-    sum=sum+(a[i]*pow(2,i))
-print(sum)
+a=a[::-1]
+j=0
+d=0
+for i in a:
+    d=d+i*pow(2,j)
+    j+=1
+print(d)
