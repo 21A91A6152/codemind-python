@@ -9,6 +9,3 @@ for i in range(n):
         if(x%2==1 and y%2==1 and z%2==1):
             c+=1
 print(c)
-         
-        
-         
