@@ -1,16 +1,13 @@
 n=int(input())
 a=list(map(int,input().split()))
 b=[]
-c=[]
 for i in a:
-    x=0
-    if i not in b:
-        b.append(i)
-        x=a.count(i)
-        
-        if(x==i):
-            c.append(i)
-if(len(c)>0):
-    print(min(c),max(c),end='')
+    x=a.count(i)
+    if(x==i):
+        if i not in b:
+            b.append(i)
+if(len(b)>0):
+    print(min(b),max(b))
 else:
     print("-1")
+    
