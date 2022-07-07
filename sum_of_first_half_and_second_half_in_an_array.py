@@ -1,10 +1,18 @@
 n=int(input())
 a=list(map(int,input().split()))
-x=n//2
-l=r=sum=0
-for i in range(x):
-    l=l+a[i]
-for i in a:
-    sum=sum+i
-print(l)
-print(sum-l)
+sf=0
+se=0
+if(n%2==0):
+    for i in range(n//2):
+        sf+=a[i]
+    for j in range((n//2),n):
+        se+=a[j]
+    print(sf)
+    print(se)
+else:
+    for i in range(n//2):
+        sf+=a[i]
+    for j in range((n//2),n):
+        se+=a[j]
+    print(sf)
+    print(se)
