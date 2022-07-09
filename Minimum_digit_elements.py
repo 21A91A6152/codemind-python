@@ -1,23 +1,17 @@
 n=int(input())
 a=list(map(int,input().split()))
-b=[]
+k=min(a)
+c=d=0
+while(k>0):
+    r=k%10
+    c+=1
+    k=k//10
 for i in a:
-    c=0
-    while(i):
+    e=0
+    while(i>0):
         x=i%10
         i=i//10
-        c+=1
-    b.append(c)
-k=min(b)
-m=0
-for j in a:
-    d=0
-    while(j):
-        y=j%10
-        j=j//10
+        e+=1
+    if(e==c):
         d+=1
-    if(d==k):
-        m+=1
-print(m)
-        
-        
+print(d)
