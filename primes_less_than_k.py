@@ -6,12 +6,12 @@ def isprime(n):
         return 1
 n=int(input())
 a=list(map(int,input().split()))
-k=int(input())
-c=0
-for i in range(n):
-    if a[i]==1:
+x=int(input())
+sum=c=0
+for i in a:
+    if i==1:
         continue
-    if isprime(a[i]):
-        if(a[i]<=k):
+    if(isprime(i)):
+        if(i<=x):
             c+=1
-print(c)
+print(c)    
