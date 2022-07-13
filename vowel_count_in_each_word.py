@@ -1,11 +1,14 @@
 n=input()
-b=[]
+v='aeiouAEIOU'
 c=0
+b=[]
 for i in n:
-    if(i=='a' or i=='e' or i=='i' or i=='o' or i=="u"):
-        c+=1
     if(i==' '):
         b.append(c)
         c=0
+    if i in v:
+        c+=1
 b.append(c)
 print(*b)
+    
+    
