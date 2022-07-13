@@ -1,9 +1,11 @@
 n=input()
-b=[]
 c=0
+b=[]
 for i in n:
     if(i==' '):
+        b.append(c)
+        c=0
+    else:
         c+=1
-c+=1
-print(c)
- 
+b.append(c)
+print(len(b))
