@@ -1,23 +1,32 @@
 n=int(input())
 a=list(map(int,input().split()))
+b=[]
+c=[]
+r=[]
 if(n%2==0):
-    k=1
-    for i in range(n):
+    for i in range(n//2):
         x=a[i]
-        y=a[n-k]
-        print(x,y,end=' ')
-        k+=1
-        if(k==n//2+1):
-            break
+        b.append(x)
+    for j in range(n-1,n//2-1,-1):
+        y=a[j]
+        c.append(y)
+    for m in range(len(b)):
+        p=b[m]
+        q=c[m]
+        r.append(p)
+        r.append(q)
+    print(*r)
 else:
-    k=1
-    for i in range(n):
+    for i in range(n//2+1):
         x=a[i]
-        y=a[n-k]
-        if(x==y):
-            y=0
-        print(x,y,end=' ')
-        k+=1
-        if(k==n//2+2):
-            break
-        
+        b.append(x)
+    for j in range(n-1,n//2,-1):
+        y=a[j]
+        c.append(y)
+    c.append(0)
+    for m in range(len(b)):
+        p=b[m]
+        q=c[m]
+        r.append(p)
+        r.append(q)
+    print(*r)
