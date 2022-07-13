@@ -1,10 +1,13 @@
-s=input()
-arr=[]
-for i in s:
-    if i in "aeiouAEIOU":
-        if i not in arr:
-            arr.append(i)
-if len(arr)!=0:
-    print(*arr)
-else:
-    print(-1)
+n=input()
+v='aeiouAEIOU'
+c=0
+b=[]
+for i in n:
+    if(i in v):
+        c+=1
+        if i not in b:
+            b.append(i)
+print(*b)
+if(c==0):
+    print("-1")
+    
