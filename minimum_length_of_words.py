@@ -1,8 +1,11 @@
 n=input()
+c=0
 b=[]
 for i in n:
-    if (i==' '):
-        break
+    if(i==' '):
+        b.append(c)
+        c=0
     else:
-        b.append(i)
-print(len(b))
+        c+=1
+b.append(c)
+print(min(b))
