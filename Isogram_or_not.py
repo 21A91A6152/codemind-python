@@ -1,13 +1,7 @@
-s=input()
-a=len(s)
-b=[]
-for i in s:
-        b.append(s.count(i))
-for i in b:
-    if i==2:
-        print('False')
+n=input()
+for i in n:
+    if(n.count(i)>1):
+        print(False)
         break
 else:
-    print('True')
-    
-    
+    print(True)
