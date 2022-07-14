@@ -1,12 +1,14 @@
-a=input()
-b=input()
-a=a.lower()
-b=b.lower()
-n=len(a)
-for i in a:
-    if i not in b:
-        print(False)
-        break
+n=input()
+n=n.lower()
+m=input()
+m=m.lower()
+if(len(m)==len(n)):
+    for i in n:
+        if i not in m:
+            print(False)
+            break
+    else:
+        print(True)
 else:
-    print(True)
-        
+    print(False)
+ 
