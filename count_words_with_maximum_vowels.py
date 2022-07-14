@@ -1,16 +1,16 @@
 n=input()
+v='aeiouAEIOU'
 b=[]
-c=0
+x=z=y=0
 for i in n:
-    if(i=='a' or i=='e' or i=='i' or i=='o' or i=="u"):
-        c+=1
-    if(i==' '):
-        b.append(c)
-        c=0
-b.append(c)
-x=max(b)
-d=0
+    if(i==" "):
+        b.append(x)
+        x=0
+    if(i in v):
+        x+=1
+b.append(x)
+y=max(b)
 for i in b:
-    if(i==x):
-        d+=1
-print(d)
+    if(i==y):
+        z+=1
+print(z)
