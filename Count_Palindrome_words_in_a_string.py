@@ -1,9 +1,9 @@
 n=input()
 n=n.lower()
-arr=list(n.split(" "))
+a=list(n.split(" "))
 c=0
-for i in arr:
-    y=i[::-1]
-    if(i==y):
+for i in a:
+    temp=i
+    if(temp==i[::-1]):
         c+=1
 print(c)
