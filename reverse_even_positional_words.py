@@ -1,9 +1,7 @@
 n=input()
-a=list(n.split(" "))
-b=[]
-for i in range(len(a)):
+x=list(n.split(" "))
+for i in range(len(x)):
     if(i%2==0):
-        b.append(a[i][::-1])
+        print(x[i][::-1],end=" ")
     else:
-        b.append(a[i])
-print(*b)
+        print(x[i],end=" ")
