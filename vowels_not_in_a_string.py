@@ -1,18 +1,14 @@
 n=input()
 n=n.lower()
-v="aeiou"
-c=[]
+a="aeiou"
 b=[]
+c=0
 for i in n:
-    if i in v:
-        if i not in b:
-            b.append(i)
-for i in v:
+    if i in a:
+        b.append(i)
+for i in a:
     if i not in b:
-        c.append(i)
-if(len(c)>0):
-    print(*c)
-else:
+        c+=1
+        print(i,end=" ")
+if(c==0):
     print("0")
-
-    
