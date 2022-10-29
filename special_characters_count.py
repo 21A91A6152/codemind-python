@@ -1,9 +1,7 @@
 n=input()
-n=n.lower()
-c=d=0
+c=0
+x=len(n)
 for i in n:
-    if i!=' ':
+    if(i.isalpha() or i==" "):
         c+=1
-    if i.isalpha():
-        d+=1
-print(c-d)
+print(x-c)
