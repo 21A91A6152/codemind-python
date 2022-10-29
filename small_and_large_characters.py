@@ -1,11 +1,7 @@
 n=input()
-a=list(n.split(" "))
-x=0
-y=0
-c=[]
-for i in a:
-    x=(max(i))
-    y=(min(i))
-    c.append(y)
-    c.append(x)
-print(*c)
+x=list(n.split(" "))
+a=[]
+for i in range(len(x)):
+    a.append(min(x[i]))
+    a.append(max(x[i]))
+print(*a)
