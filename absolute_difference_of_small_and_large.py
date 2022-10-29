@@ -1,10 +1,7 @@
 n=input()
-a=list(n.split(" "))
-x=0
-y=0
-c=[]
-for i in a:
-    x=ord(max(i))
-    y=ord(min(i))
-    c.append(x-y)
-print(*c)
+x=list(n.split(" "))
+for i in range(len(x)):
+    a=b=0
+    a=ord(min(x[i]))
+    b=ord(max(x[i]))
+    print(abs(a-b),end=" ")
