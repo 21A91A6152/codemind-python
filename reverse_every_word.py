@@ -1,3 +1,4 @@
 n=input()
-for word in n.split(" "):
-    print(word[::-1],end=' ')
+x=list(n.split(" "))
+for i in x:
+    print(i[::-1],end=" ")
