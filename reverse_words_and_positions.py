@@ -1,4 +1,2 @@
-a=input()
-arr=list(a.split())
-for i in range(len(arr)-1,-1,-1):
-    print(arr[i][::-1],end=" ")
+n=input()
+print(n[::-1])
