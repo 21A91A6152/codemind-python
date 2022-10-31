@@ -1,11 +1,11 @@
-n=input()
-m=input()
-n=n.lower()
-m=m.lower()
-a=list(n.split(" "))
-b=list(m.split(" "))
+a=input()
+b=input()
+a=a.lower()
+b=b.lower()
+x=list(a.split(" "))
+y=list(b.split(" "))
 c=0
-for i in a:
-    if i in b:
+for i in x:
+    if i in y:
         c+=1
 print(c)
