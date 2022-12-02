@@ -1,9 +1,9 @@
-x=input()
-y=input()
-x=x.lower()
-y=y.lower()
-a=list(x.split(" "))
-b=list(y.split(" "))
-for i in b:
-    if i in a:
+n=input()
+n=n.lower()
+m=input()
+m=m.lower()
+x=list(n.split(" "))
+y=list(m.split(" "))
+for i in y:
+    if i in x:
         print(i,end=" ")
