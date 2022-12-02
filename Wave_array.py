@@ -1,0 +1,35 @@
+n=int(input())
+x=list(map(int,input().split()))
+c=0
+if(x[0]<x[1]):
+    for i in range(n-1):
+        if(i%2==0):
+            if(x[i]<x[i+1]):
+                continue
+            else:
+                c+=1
+                break
+        else:
+            if(x[i]>x[i+1]):
+                continue
+            else:
+                c+=1
+                break
+else:
+    for i in range(n-1):
+        if(i%2==0):
+            if(x[i]>x[i+1]):
+                continue
+            else:
+                c+=1
+                break
+        else:
+            if(x[i]<x[i+1]):
+                continue
+            else:
+                c+=1
+                break
+if(c==0):
+    print("yes")
+else:
+    print("no")
